@@ -1,0 +1,109 @@
+.section-three {
+   background: $db-main-bgd;
+   padding: 1.75rem;
+   margin-top: -0.875rem;
+
+   &-container {
+      @include desktop {
+         display: flex;
+         padding-inline: 4.375rem;
+         margin-top: 5.625rem;
+      }
+   }
+
+   &-image {
+      width: 100%;
+      height: 15.625rem;
+      margin-top: 8.3125rem;
+      background-image: url(/images/illustration-stay-productive.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include desktop {
+         flex: 1;
+         margin-top: 0;
+         width: 85%;
+         height: 32.25rem;
+         background-size: auto;
+      }
+   }
+
+   &-over-cont {
+      margin-top: 3.125rem;
+      @include desktop {
+         flex: 1;
+         margin-top: 0;
+      }
+   }
+
+   &-text-container {
+      margin-left: 3.125rem;
+      margin-top: 4.75rem;
+      h3 {
+         font-size: 1.125rem;
+         @include desktop {
+            font-size: 2.375rem;
+            padding-right: 9.375rem;
+         }
+      }
+
+      p {
+         font-size: 0.8125rem;
+         letter-spacing: 0.03125rem;
+         line-height: 1.375rem;
+         @include desktop {
+            font-size: 1rem;
+         }
+      }
+   }
+
+   &-fyl {
+      display: flex;
+      align-items: center;
+      transition: all 300 ease-in-out;
+
+      a {
+         text-decoration: none;
+         color: $cyan;
+         font-size: 0.75rem;
+         transition: all 300 ease-in-out;
+
+         @include desktop {
+            font-size: 1rem;
+         }
+
+         &:hover {
+            color: #ffffff;
+         }
+      }
+
+      img {
+         width: 1rem;
+         height: 1rem;
+         margin-left: 0.375rem;
+         margin-top: -0.375rem;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      a::after {
+         content: "";
+         display: block;
+         height: 0.0625rem;
+         width: 118%;
+         background-color: $cyan;
+         margin-top: 0.375rem;
+      }
+
+      &:hover {
+         cursor: pointer;
+         img {
+            content: url(/images/icon-arrow-copy.svg);
+         }
+         a::after {
+            background-color: #ffffff;
+         }
+      }
+   }
+}

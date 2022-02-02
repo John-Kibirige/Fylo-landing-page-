@@ -1,0 +1,86 @@
+.section-two {
+   &-container {
+      background-color: $db-main-bgd;
+      @include desktop {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding-inline: 14.0625rem;
+         row-gap: 1.25rem;
+         column-gap: 1.875rem;
+      }
+   }
+
+   &-item {
+      text-align: center;
+
+      h3 {
+         font-size: 1.125rem;
+         @include desktop {
+            font-size: 1.1875rem;
+            letter-spacing: 0.025rem;
+         }
+      }
+
+      p {
+         font-size: 0.8125rem;
+         letter-spacing: 0.03125rem;
+         padding-inline: 1.8125rem;
+         line-height: 1.375rem;
+         margin-top: -0.625rem;
+
+         @include desktop {
+            padding-inline: 3.1875rem;
+            font-size: 0.84375rem;
+         }
+      }
+
+      .anywhere {
+         padding-inline: 3.75rem;
+      }
+
+      img {
+         margin-top: 4.375rem;
+         margin-bottom: 0.625rem;
+      }
+
+      .access {
+         width: 3.75rem;
+         height: 3.75rem;
+         @include desktop {
+            width: 5.625rem;
+            height: 5rem;
+            margin-top: 0;
+         }
+      }
+
+      .security {
+         width: 3.375rem;
+         height: 4.5rem;
+         @include desktop {
+            width: 4.4375rem;
+            height: 5.625rem;
+            margin-top: 0;
+         }
+      }
+
+      .collaboration {
+         width: 4.75rem;
+         height: 3.8125;
+         @include desktop {
+            width: 5.625rem;
+            height: 4.5rem;
+            margin-top: 3.125rem;
+         }
+      }
+
+      .file {
+         width: 4.375rem;
+         height: 4.125rem;
+         @include desktop {
+            width: 5.625rem;
+            height: 3.9375rem;
+            margin-top: 3.75rem;
+         }
+      }
+   }
+}
