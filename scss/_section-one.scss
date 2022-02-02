@@ -26,12 +26,12 @@
          position: absolute;
          z-index: -1;
          margin-top: -2.5rem;
-         background-image: url(/images/bg-curvy-mobile.svg);
+         background-image: url(images/bg-curvy-mobile.svg);
          background-size: 100%;
          background-repeat: no-repeat;
 
          @include desktop {
-            background-image: url(/images/bg-curvy-desktop.svg);
+            background-image: url(images/bg-curvy-desktop.svg);
             height: 31.25rem;
             width: 107%;
             background-size: 100% 90%;
